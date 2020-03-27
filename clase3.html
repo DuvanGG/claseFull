@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 - Bases de javascript</title>
+</head>
+<body>
+    <script>
+        /* Do While (Estructura iterativa)
+            Este ciclo se ejecuta al menos una vez 
+            sin importar si se cumple o no la condicion 
+            que se quiere evaluar
+        
+        */
+
+        // let i = 0;
+
+        // do{
+        //     i++; 
+        //     document.write(`Numeros: ${i} <br>`)
+        // }while(i<10);
+
+
+        /*
+            METODOS O FUNCIONES PARA CADENAS 
+
+            Objeto String
+            split -> romper una cadena a partir de un determinado caracter
+            length -> longitud cadena
+            splice 
+            toLowerCase ->convertir a minuscula
+            toUpperCase -> convertir a mayuscula
+            join 
+            concat
+            chartAt
+            trim
+            repeat
+            str
+            substr
+            lastIndexOf ->Ultima posicion
+            indexOf ->primer pocision
+            replace
+        */
+
+        // let cadena = prompt("Ingresa una frase")
+        // // Hola como estas
+        // document.write(`longitud de la cadena ${cadena.length} <br>`);
+        // document.write(`Mayuscula: ${cadena.toUpperCase()} <br>`);
+        // document.write(`Minuscula ${cadena.toLowerCase()} <br>`);
+        // document.write(`cadena primer posicion ${cadena.charAt(0)} <br>`);
+
+        // let caracter = prompt("Escriba un caracter a buscar")
+        // document.write(`<br> Posicion de letra: ${cadena.indexOf(caracter)}<br>`)
+        // document.write(`<br> Posicion de la ultima letra: ${cadena.lastIndexOf(caracter)}<br>`)
+        // document.write(cadena.split(""))//siempre devuelve un arreglo
+
+    
+        // document.write(cadena.replace("", "-"));
+        // document.write(cadena.substring(0,2));
+
+            /*
+                 METODO ARREGLOS
+            join -> concatenar a partir de un simbolo o un caracter
+            concat -> concatenar o unir dos o mas arreglos 
+            push -> agregar datos a un arreglo, anexando en la ultima pocision
+            splice -> se obtiene un porcion del arreglo
+            shift -> eliminar el dato que se encuentra en la (0)
+            sort -> ordenar
+            unshift-> agregar datos en la pocision (0)
+            reverse -> invertir el arreglo
+            map (ES6)**
+            pop-> eliminar ultima pocision del arreglo
+            find
+            */
+
+            // let alfa1 = ["A","B","C"];
+            // let alfa2 = ["E","F","G"];
+
+            // let grupoA,
+            //      grupoB,
+            //       inverso;
+            
+            // grupoA = alfa1.concat(alfa2);
+            // document.write(grupoA);
+
+            // grupoB = grupoA.join("-");
+            // document.write(grupoB);
+
+            // grupoA.pop();
+            // document.write(grupoA);
+
+            // grupoA.push("G")
+            // document.write(grupoA);
+
+            // grupoA.shift();
+            // document.write(grupoA);
+
+            // grupoA.unshift("Z")
+            // document.write(grupoA);
+
+            // inverso=grupoA.reverse();
+            // document.write(inverso);
+
+            /*
+            ACTIVIDAD 
+
+            1) pedir al usuario x cantidad de datos numericos se deben discriminar los ceros 
+            que el usuario ingrese e imprimir unicamente en el html o en consola 
+            los datos distintos de cero (minimo 5 datos).
+
+            2)Pedir al usuario que ingrese x cantidad de datos. estos pueden ser numericos
+            o caracteres. validar que al ser caracter ingrese unicamente el primer caracter
+            de dicha cadena. organizar los datos del usuario de menor a mayor 
+            empezando por las letras y luego por los numeros.
+
+            */
+
+
+            // let CantidadDatos = prompt("¿Cuantos datos deseas ingresar?");
+
+            // for (let i = 0; i < CantidadDatos; i++) {
+            //     //Se piden los datos segun la variable cantidad de datos
+            //     let Numero = prompt("Ingresa tus datos numericos");
+            //     //si realiza una comparacion, si los datos son diferentes de cero
+            //     if(Numero != 0){
+            //         document.write("Tus numeros son: " + Numero);
+            //     }
+            // }
+
+            // 2
+
+            let CantidadDatos = prompt("¿Cuantos datos deseas ingresar?");
+            
+            for (let i = 0; i < CantidadDatos; i++) {
+                let DatoIngresado = prompt("Ingresa tus datos");
+                let ArrayDatos = [DatoIngresado]
+                ArrayDatos.push(DatoIngresado)
+                document.write(ArrayDatos[0])
+    
+            }
+
+
+    </script>
+</body>
+</html>

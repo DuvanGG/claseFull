@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //REPASO EJEMPLO DE VARIABLES
+        let x = 2;
+        let y = 3;
+
+        document.write(`variable x: ${x} <br> variable y: ${y}`);
+
+        let mayor = x>y;
+        console.log(`mayor: ${mayor}`); //variable interpolada
+        let MayorIgual = x>=y;
+        console.log(`mayor o igual: ${MayorIgual}`);
+        let menor = x<y;
+        console.log(`menor: ${menor}`)
+
+        //REPASO OPERADORES LOGICOS
+        let variable1 = false;
+        let $variable2 = true;
+
+        // AND (y) simbolo ampersand &&
+        let resultadoAND = variable1&&$variable2;
+        alert(`resultado AND: ${resultadoAND}`);
+        /*
+            Ampersand &&
+            V && F = F
+            F && V = F
+            F && F = F
+            V && V = V
+        */
+
+        // OR (o) simbolo pipe || 
+        let resultadoOR = variable1||$variable2;
+        alert(`resultado OR: ${resultadoOR}`);
+        /*
+            Pipe ||
+            V || F = v
+            F || V = v
+            V || V = V
+            F || F = F
+        */
+
+        //NEGACION !
+        let resultadoNOT = !variable1; //indica negacion
+        // var1 != var2 -> indica diferente
+        alert(`resultado NOT: ${resultadoNOT}`);
+
+        // ESTRUCTURAS DE CONTROL
+        /*
+            permite al sistema trabajar con relacion a decisiones :
+            -selectiva(control if/else)
+            -multiple(Control switch)
+            -iterativas(for,while,do while)
+        */
+        /*
+            CONTROL DE FLUJO IF
+
+            Si la condicion se cumple se ejecutara una determinada sentencia 
+            Codigo spaguetti: Anidacion de condicionales  if / else (mala practica)
+
+            if (evaluacion){
+                bloque de codigo
+            } else{
+                segundo bloque de codigo
+            }                              
+        */
+
+        /*
+        para convertir a un numero:
+        variable.parseInt(variable) o Number(variable)
+        */
+
+        // let respuesta = prompt("ingrese un numero mayor a 5") //promp devuelve un string
+        // if(respuesta > 5){
+        //     alert("Buen trabajo")
+        //     if(respuesta == 6){
+        //         alert("Perfecto");
+        //     }else{
+        //         alert("Esperabamos un 6")
+        //     }    
+        // }else{
+        //     alert("No es un numero mayor a 5")
+        // }
+
+        //SWITCH
+        /*
+        Ejecuta cadena de sentencias siempre y cuando la
+        condicion se valide en los casos especificados en el flujo.
+        */
+
+        // let opcionUsuario = prompt("ingrese un numero del 1 al 3");
+
+        // switch(opcionUsuario){
+        //     case "1":
+        //         alert("Escogio el 1");
+        //         break;
+        //     case "2":
+        //         alert("Escogio el 2");
+        //         break;
+        //     case "3":
+        //         alert("Escogio el 3");
+        //         break;
+        //     default: 
+        //         alert("No coincide con las opciones")
+        // }
+
+        /*
+            BUCLE O CICLO FOR
+
+            -iteracion de los arreglos de datos 
+            -simplifica procesos
+            -Manejo de eventos
+            -repeticion de accion n catidad de veces 
+            con el ciclo for no se sabe la cantidad de iteraciones
+            que debe hacer el bucle y en que momento debe salir
+            dela iteracion.
+            la iteracion hace referencia al aumento o dercremento 
+            de un elemento.
+
+        */
+
+        // for(i = 0; i<=10; i++){
+        //     document.write(`Numero: ${i} <br>`);
+        // }
+
+        /*
+            BUCLE WHILE
+            mientras se cumpla una condicion entrara a ejecutar
+            una determinada sentencia.
+
+            while(condicion){
+                ejecutar codigo
+            }
+
+
+        
+        */
+
+        // let i = 0;
+        // while(i<=10){
+        //     document.write(`Numero: ${i} <br>`)
+        //     i++
+        // }
+
+
+        //ARREGLOS 
+        /*
+            Variable que almacena gran cantidad de datos
+            , estos datos se van a manejar siempre desde 
+            la posicion 0.
+        */
+        let dias = ["Lunes","Martes","Miercoles","jueves","Viernes","Sabado","Domingo"]
+        for(i = 0; i < dias.length; i++){
+            document.write(`${dias[i]} <br>`);
+        }
+    </script>
+</body>
+</html>
